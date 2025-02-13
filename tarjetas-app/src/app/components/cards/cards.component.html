@@ -1,0 +1,28 @@
+<table class="table-auto w-full bg-white">
+    <thead class="border-b-2 border-zinc-700 mb-1">
+        <tr>
+            <th class="p-3 font-semibold text-gray-600">Nombre</th>
+            <th class="p-3 font-semibold text-gray-600">Tarjeta</th>
+            <th class="p-3 font-semibold text-gray-600">Cedula</th>
+            <th class="p-3 font-semibold text-gray-600">Direccion</th>
+            <th class="p-3 font-semibold text-gray-600">Telefono</th>
+            <th class="p-3 font-semibold text-gray-600">Vencimiento</th>
+            <th class="p-3 font-semibold text-gray-600">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (tarjeta of tarjetas; track tarjeta.tarjeta_id) {
+            <tr class="border-b border-gray-300 py-2 text-center">
+                <td class="p-3 text-gray-900 text-sm">{{ tarjeta.nombre }}</td>
+                <td class="p-3 text-gray-900 text-sm">{{ tarjeta.nroTarjeta }}</td>
+                <td class="p-3 text-gray-900 text-sm">{{ tarjeta.cedula }}</td>
+                <td class="p-3 text-gray-900 text-sm">{{ tarjeta.direccion }}</td>
+                <td class="p-3 text-gray-900 text-sm">{{ tarjeta.telefono }}</td>
+                <td class="p-3 text-gray-900 text-sm">{{ tarjeta.fecha_vencimiento }}</td>
+                <td class="p-3 text-gray-900">
+                    <button class="bg-red-600 rounded text-white p-2 text-sm font-semibold text-sm cursor-pointer">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

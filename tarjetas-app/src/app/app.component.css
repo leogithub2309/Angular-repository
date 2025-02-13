@@ -1,0 +1,16 @@
+@media (max-width: 649px) {
+    .sm-flex-col{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-sm{
+        padding: 6rem;
+        height: 100vh;
+        margin: 4rem auto;
+    }
+
+    
+}

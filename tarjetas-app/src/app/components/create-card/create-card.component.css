@@ -1,0 +1,17 @@
+@media (max-width: 649px) {
+    
+    .form-xs{
+        width: 23rem !important;
+        margin: 5rem auto 0;
+    }
+    
+    .flex-xs{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+
+    
+}
